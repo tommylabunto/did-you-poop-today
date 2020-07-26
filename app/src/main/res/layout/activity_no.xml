@@ -7,12 +7,27 @@
     tools:context=".NoActivity">
 
     <TextView
+        android:id="@+id/textView_no_poop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="88dp"
-        android:text="shit's about to go down"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/no_poop_label"
+        android:textColor="@color/whitePrimaryText"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_no_poop"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/no_poop_content_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_no_poop"
+        app:srcCompat="@android:drawable/screen_background_dark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

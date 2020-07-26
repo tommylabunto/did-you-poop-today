@@ -23,12 +23,15 @@ public class YesActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowTitleEnabled(false);
         }
 
-        ImageView imageView = findViewById(R.id.yes_imageView);
+        ImageView imageView = findViewById(R.id.imageView_poop);
+
+        String poopString = MemeList.randomPoopString();
 
         Glide.with(this)
-                .load(Uri.parse("file:///android_asset/yes/mind_blown.gif"))
+                .load(Uri.parse(poopString))
                 .into(imageView);
     }
 

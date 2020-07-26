@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Did you poop today</string>
+    <string name="short_app_name">poop</string>
+    <string name="view_all_memes_header">View all memes</string>
+    <string name="view_all_memes_description">disclaimer: it\'s pretty shitty</string>
+    <string name="pooped_description">For All The Proud Poopers</string>
+    <string name="no_poop_description">For All The Shy Poopers</string>
+    <string name="pooped_label">well done, fellow pooper</string>
+    <string name="pooped_content_description">meme if you pooped</string>
+    <string name="shitty_meme">shitty meme</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="no_poop_label">well, shit\'s about to go down</string>
+    <string name="no_poop_content_description">meme if you never pooped</string>
+    <string name="the_poop_question">DID YOU POOP TODAY?</string>
 </resources>

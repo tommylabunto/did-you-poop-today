@@ -7,24 +7,28 @@
     tools:context=".YesActivity">
 
     <TextView
+        android:id="@+id/textView_pooped"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="88dp"
-        android:text="well done fellow pooper"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/pooped_label"
+        android:textColor="@color/whitePrimaryText"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/yes_imageView"
-        android:layout_width="281dp"
-        android:layout_height="264dp"
-        android:layout_marginLeft="76dp"
-        android:layout_marginTop="256dp"
+        android:id="@+id/imageView_poop"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/pooped_content_description"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/screen_background_dark"
-        android:contentDescription="meme if you pooped" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_pooped"
+        app:srcCompat="@android:drawable/screen_background_dark" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

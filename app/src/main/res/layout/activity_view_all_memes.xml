@@ -7,12 +7,61 @@
     tools:context=".ViewAllMemesActivity">
 
     <TextView
+        android:id="@+id/textView_pooped"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="88dp"
-        android:text="View all memes activity"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/pooped_description"
+        android:textColor="@color/whitePrimaryText"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider_one"
+        style="@style/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pooped" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_pooped_memes"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_one" />
+
+    <TextView
+        android:id="@+id/textView_no_poop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/no_poop_description"
+        android:textColor="@color/whitePrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview_pooped_memes" />
+
+    <View
+        android:id="@+id/divider_two"
+        style="@style/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_no_poop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_no_poop_memes"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_two" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

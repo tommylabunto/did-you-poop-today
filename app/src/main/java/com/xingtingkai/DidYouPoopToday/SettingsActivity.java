@@ -6,6 +6,8 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class SettingsActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowTitleEnabled(false);
         }
 
         CardView cardViewViewAll = findViewById(R.id.cardView_go_view_all);
@@ -27,11 +30,5 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(goToViewAllMemesActivity);
             }
         });
-    }
-
-    @Override
-    public boolean onSupportNavigateUp(){
-        finish();
-        return true;
     }
 }
